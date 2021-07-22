@@ -1,0 +1,25 @@
+Index(['Age', 'Height', 'Weight', 'FCVC', 'NCP', 'CAEC', 'CH2O', 'FAF', 'TUE',
+       'CALC', 'MTRANS_Bike', 'MTRANS_Motorbike',
+       'MTRANS_Public_Transportation', 'MTRANS_Walking', 'SCC_yes',
+       'SMOKE_yes', 'FAVC_yes', 'Gender_Male',
+       'family_history_with_overweight_yes'],
+      dtype='object')
+
+
+Gender {Female,Male}
+Age numeric
+Height numeric
+Weight numeric
+family_history_with_overweight {yes,no}
+FAVC {yes,no} ====> Do you eat high caloric food frequently?
+FCVC numeri ====> Do you usually eat vegetables in your meals?
+NCP numeric ====>  main meals do you have daily
+CAEC {no,Sometimes,Frequently,Always} ====> eat any food between meals?
+SMOKE {yes,no}
+CH2O numeric ====> water do you drink daily?
+SCC {yes,no} ====> monitor the calories you eat daily?
+FAF numeric ====> How often do you have physical activity?
+TUE numeric ====> Time using technology
+CALC {no,Sometimes,Frequently,Always} ====> how often do you drink alcohol?
+MTRANS {Automobile,Motorbike,Bike,Public_Transportation,Walking}
+NObeyesdad {Insufficient_Weight,Normal_Weight,Overweight_Level_I,Overweight_Level_II,Obesity_Type_I,Obesity_Type_II,Obesity_Type_III}
