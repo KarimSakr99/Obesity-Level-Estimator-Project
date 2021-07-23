@@ -3,6 +3,27 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
 
+    def warning(self):
+        from PyQt5.QtWidgets import QMessageBox
+        msg = QMessageBox()
+        msg.setIcon(QMessageBox.Warning)
+        msg.setText("Check the submitted values again, please!")
+        msg.setWindowTitle("Warning")
+        msg.setStandardButtons(QMessageBox.Ok)
+        msg.exec_()
+
+    def clear_out(self):
+        self.out_2.setText("")
+        self.out.setAlignment(QtCore.Qt.AlignBottom | QtCore.Qt.AlignHCenter)
+        self.out.setText('Result')
+
+    def val_predict(self):
+        try:
+            self.predict()
+        except:
+            self.clear_out()
+            self.warning()
+
     def predict(self):
         data = [float(self.in_1.text()), float(self.in_2.text()),
                 float(self.in_3.text()), float(self.in_4.text()),
@@ -48,7 +69,7 @@ class Ui_MainWindow(object):
         self.button.setFont(font)
         self.button.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
         self.button.setObjectName("button")
-        self.button.clicked.connect(self.predict)
+        self.button.clicked.connect(self.val_predict)
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(50, 220, 90, 32))
         font = QtGui.QFont()
