@@ -1,4 +1,6 @@
-## Obesity Level Estimator Project
+# Obesity Level Estimator Project
+
+### [EPSILON AI](https://epsilonaii.org/) Certified Data Scientist Associate (CDSA) graduation project (July 2021).
 
 <a href="https://drive.google.com/file/d/16_ZZc4BvvqLPd4qPRQ4RbmcP7-vAvC_u/view?usp=sharing">Download the executable file for trial</a>
 
